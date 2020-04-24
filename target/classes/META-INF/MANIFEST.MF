@@ -1,0 +1,37 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1587735404351
+Build-Jdk: 1.8.0_211
+Built-By: U035996
+Bundle-Activator: com.ur.urcap.safetyhome.impl.Activator
+Bundle-Category: URCap
+Bundle-ContactAddress: Tokyo, Japan
+Bundle-Description: Going Safety Home URCap
+Bundle-LicenseType: None
+Bundle-ManifestVersion: 2
+Bundle-Name: Going Safety Home URCap
+Bundle-SymbolicName: com.ur.urcap.safetyhome
+Bundle-Vendor: Takaaki Fujiki
+Bundle-Version: 1.0.0
+Created-By: Apache Maven Bundle Plugin
+Embed-Dependency: logo, rtde, converter
+Import-Package: com.ur.urcap.api.contribution;version="[1.2.0,2.0.0)",co
+ m.ur.urcap.api.contribution.program;version="[1.2.0,2.0.0)",com.ur.urca
+ p.api.domain;version="[1.2.0,2.0.0)",com.ur.urcap.api.domain.data;versi
+ on="[1.2.0,2.0.0)",com.ur.urcap.api.domain.feature;version="[1.2.0,2.0.
+ 0)",com.ur.urcap.api.domain.program;version="[1.2.0,2.0.0)",com.ur.urca
+ p.api.domain.program.nodes;version="[1.2.0,2.0.0)",com.ur.urcap.api.dom
+ ain.program.nodes.builtin;version="[1.2.0,2.0.0)",com.ur.urcap.api.doma
+ in.program.nodes.builtin.configurations.movenode;version="[1.2.0,2.0.0)
+ ",com.ur.urcap.api.domain.program.nodes.builtin.configurations.movenode
+ .builder;version="[1.2.0,2.0.0)",com.ur.urcap.api.domain.program.nodes.
+ builtin.configurations.waypointnode;version="[1.2.0,2.0.0)",com.ur.urca
+ p.api.domain.program.structure;version="[1.2.0,2.0.0)",com.ur.urcap.api
+ .domain.script;version="[1.2.0,2.0.0)",com.ur.urcap.api.domain.util;ver
+ sion="[1.2.0,2.0.0)",com.ur.urcap.api.domain.validation;version="[1.2.0
+ ,2.0.0)",com.ur.urcap.api.domain.value;version="[1.2.0,2.0.0)",com.ur.u
+ rcap.api.domain.value.expression;version="[1.2.0,2.0.0)",com.ur.urcap.a
+ pi.domain.value.simple;version="[1.2.0,2.0.0)",com.ur.urcap.api.domain.
+ variable;version="[1.2.0,2.0.0)",com.ur.urcap.api.ui.annotation;version
+ ="[1.2.0,2.0.0)",com.ur.urcap.api.ui.component;version="[1.2.0,2.0.0)",
+ org.osgi.framework;version="[1.6,2)"
+Tool: Bnd-2.1.0.20130426-122213

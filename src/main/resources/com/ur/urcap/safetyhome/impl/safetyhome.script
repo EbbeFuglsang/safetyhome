@@ -1,0 +1,45 @@
+
+poseCur = get_actual_tcp_pose()
+
+lowerX = {inputLowerX}
+upperX = {inputUpperX}
+lowerY = {inputLowerY}
+upperY = {inputUpperY}
+lowerZ = {inputLowerZ}
+upperZ = {inputUpperZ}
+
+moveX = {inputMoveX}
+moveY = {inputMoveY}
+moveZ = {inputMoveZ}
+
+baseAxis = {baseAxis}
+
+initX = False
+initY = False
+initZ = False
+
+
+if (lowerX < poseCur[0] * 1000 and poseCur[0] * 1000 < upperX):
+  initX = True
+end
+
+# --Y--
+if (lowerY < poseCur[1] * 1000 and poseCur[1] * 1000 < upperY):
+  initY = True
+end
+
+# --Z--
+if (lowerZ < poseCur[2] * 1000 and poseCur[2] * 1000 < upperZ):
+  initZ = True
+end
+
+dx = moveX / 1000 * (initX and initY and initZ)
+dy = moveY / 1000 * (initX and initY and initZ)
+dz = moveZ / 1000 * (initX and initY and initZ)
+
+if (baseAxis == True):
+  initPos = pose_add(poseCur, p[dx,  dy,  dz,  0,  0,  0])
+else:
+  initPos = pose_trans(poseCur, p[dx,  dy,  dz,  0,  0,  0])
+end
+

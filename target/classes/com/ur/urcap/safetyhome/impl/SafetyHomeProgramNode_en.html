@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            padding: 10px 0px 0px 0px;
+        }
+
+        div {
+            font-size: 15px;
+        }
+
+        input {
+            font-size: 15px;
+            height: 25px;
+        }
+
+        select {
+            font-size: 15px;
+            height: 25px;
+        }
+
+        .classInput {
+            height: 25px;
+        }
+
+        .classLine {
+            padding-left: 10px;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div id="mainform" style=" display: inline-block;">
+            <p>
+                Node <input type="text" id="inputNodeTitle" style="width: 200px;" />
+            </p>
+
+            <div id="div_conditions" class="classLine">
+                <h3>
+                    Conditions (Unit:mm)
+                </h3>
+
+                <div style="display:inline-block">
+                    <div style="height: 30px; width:90px">
+                        <input type="number" id="inputLowerX" style="width: 80px">
+                    </div>
+                    <div style="height: 30px; width:90px">
+                        <input type="number" id="inputLowerY" style="width: 80px">
+                    </div>
+                    <div style="height: 30px; width:90px">
+                        <input type="number" id="inputLowerZ" style="width: 80px">
+                    </div>
+                </div>
+                <div style="display:inline-block">
+                    <div style="height: 30px; width:70px">
+                        &nbsp; &lt &nbsp;X &nbsp; &lt &nbsp;
+                    </div>
+                    <div style="height: 30px; width:70px">
+                        &nbsp; &lt &nbsp;Y &nbsp; &lt &nbsp;
+                    </div>
+                    <div style="height: 30px; width:70px">
+                        &nbsp; &lt &nbsp;Z &nbsp; &lt &nbsp;
+                    </div>
+                </div>
+                <div style="display:inline-block">
+                    <div style="height: 30px; width:90px">
+                        <input type="number" id="inputUpperX" style="width: 80px">
+                    </div>
+                    <div style="height: 30px; width:90px">
+                        <input type="number" id="inputUpperY" style="width: 80px">
+                    </div>
+                    <div style="height: 30px; width:90px">
+                        <input type="number" id="inputUpperZ" style="width: 80px">
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div id="div_result" class="classLine">
+                <h3>
+                    Movement (Unit:mm)
+                </h3>
+
+                <div style="display:inline-block">
+                    <div style="height: 30px; width: 40px">
+                        X: &nbsp;
+                    </div>
+                    <div style="height: 30px; width: 40px">
+                        Y: &nbsp;
+                    </div>
+                    <div style="height: 30px; width: 40px">
+                        Z: &nbsp;
+                    </div>
+                </div>
+                <div style="display:inline-block">
+                    <div style="height: 30px; width:90px">
+                        <input type="number" id="inputMoveX" style="width: 80px">
+                    </div>
+                    <div style="height: 30px; width:90px">
+                        <input type="number" id="inputMoveY" style="width: 80px">
+                    </div>
+                    <div style="height: 30px; width:90px">
+                        <input type="number" id="inputMoveZ" style="width: 80px">
+                    </div>
+                </div>
+                <div>
+                    <input type="radio" id="inputBase" name="axis"> &nbsp; Base feature
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" id="inputTool" name="axis"> &nbsp; Tool feature
+                </div>
+            </div>
+
+            <hr>
+
+            <div style="display: inline-block; padding-top: 10px;">
+                <div>Created by Takaaki Fujiki, Tokyo, Japan</div>
+            </div>
+
+        </div>
+    </form>
+</body>
+
+</html>
